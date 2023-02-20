@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Interview{
+	
+	public static void main(String[] args) {
+	
+	Scanner scan = new Scanner(System.in);
+
+	String name;
+	String hometown;
+	String major;
+	String music;
+	String pressure;
+	int age;
+	float heightIn;
+	float heightCm;
+	
+	System.out.println("What is your name? ");
+	name = scan.nextLine();
+	
+	System.out.println("Where are you from? ");
+	hometown = scan.nextLine();
+	
+	System.out.println("What is your major? ");
+	major = scan.nextLine();
+	
+	System.out.println("How do you work under pressure in one adjective? ");
+	pressure = scan.nextLine();
+	
+	System.out.println("Who is your favorite artist? ");
+	music = scan.nextLine();
+
+	System.out.println("How old are you? ");
+	age = scan.nextInt();
+	
+	System.out.println("How tall are you in inches? ");
+	heightIn = scan.nextFloat();
+	heightCm = (float) (heightIn*2.54);
+	
+	System.out.print("Their name is " + name + ".");
+	System.out.print("They are from " + hometown + ".");
+	System.out.print("Their major is " + major + ".");
+	System.out.print("They are " + age + " years old.");
+	System.out.print("They listen to " + music + ".");
+	System.out.print("They work " + pressure + " under pressure.");
+	System.out.print("They are " + heightIn + " in inches and " + heightCm + " in centimeters.");
+	}
+}
